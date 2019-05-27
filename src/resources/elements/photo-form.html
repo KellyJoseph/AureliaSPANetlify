@@ -1,0 +1,17 @@
+
+<template>
+  <div class="ui segment">
+  <form submit.delegate="uploadPhoto()" enctype="multipart/form-data">
+    <div class="two fields">
+      <div class="field">
+        <label>File</label>
+        <input type="file" name="file" accept="image/*" files.bind="files">
+      </div>
+      <div class="field">
+        <label>Title</label> <input value.bind="title">
+      </div>
+    </div>
+    <button type="submit"> Upload </button>
+  </form>
+</div>
+</template>
