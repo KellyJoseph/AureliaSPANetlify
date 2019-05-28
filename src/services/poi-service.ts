@@ -26,7 +26,9 @@ export class PoiService {
     private router: Router
   ) {
     httpClient.configure(http => {
-      http.withBaseUrl('http://localhost:3000');
+      //http.withBaseUrl('http://localhost:3000');
+      http.withBaseUrl('https://shrouded-brook-59989.herokuapp.com/');
+
     });
     //this.getUsers();
     //this.getLocations();
